@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pyttsx3
+opencv-python
+mediapipe
+pyautogui
+numpy

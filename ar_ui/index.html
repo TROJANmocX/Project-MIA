@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIA AR Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="../ui_assets/logo.svg" alt="MIA Logo" class="logo">
+    <h1>Welcome, User</h1>
+    <span class="status">Status: <span id="system-status">Online</span></span>
+  </header>
+  <main>
+    <section class="panel" id="voice-history">
+      <h2>Voice Command History</h2>
+      <ul id="voice-list"></ul>
+    </section>
+    <section class="panel" id="gesture-history">
+      <h2>Gesture History</h2>
+      <ul id="gesture-list"></ul>
+    </section>
+    <section class="panel" id="system-stats">
+      <h2>System Stats</h2>
+      <div id="stats"></div>
+    </section>
+    <section class="panel" id="settings">
+      <h2>Settings</h2>
+      <button id="privacy-toggle">Toggle Privacy</button>
+      <button id="personality-select">Change Personality</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
