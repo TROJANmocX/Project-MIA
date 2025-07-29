@@ -51,5 +51,32 @@ A futuristic AI-powered desktop assistant blending gesture control, voice comman
 - No voice or gesture data leaves your machine
 - Settings allow you to mute mic/camera and control privacy
 
-## License
-MIT
+## Upcoming Features
+- Adaptive UI based on mood
+- Contextual voice replies
+- Smart room/environment detection
+- Mood-based desktop themes
+- AI-driven app suggestions
+- Personality selector GUI
+
+## Privacy & Security
+- Everything is processed locally
+- No data sent to the cloud
+- Mic and cam can be toggled from system tray
+
+### 🛠️ File Reference Table
+
+| 📌 Action                      | 🗂️ File to Edit                        |
+|-------------------------------|----------------------------------------|
+| Add voice commands            | `mia_assistant/command_parser.py`      |
+| Add gestures (scroll, click)  | `gesture_control/main.py`              |
+| New personality styles        | `mia_assistant/tts_response.py`        |
+| Extend API actions            | `server/api.py`                        |
+| Add smart overlay visuals     | `mia_assistant/hud_overlay.py`         |
+
+
+## Developer Notes
+This assistant is modular. You can:
+- Replace MediaPipe with LeapMotion or webcam-free input
+- Add OpenAI integration for smarter replies
+- Build plugin modules for more gestures or voice actions
