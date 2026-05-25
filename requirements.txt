@@ -1,7 +1,41 @@
+# Core
 fastapi
 uvicorn
+torch
+transformers
+accelerate
+scipy
+
+# Audio & TTS
 pyttsx3
+sounddevice
+librosa
+numpy
+
+# UI
+PySide6-Essentials
+PyQt5
+
+# Computer Vision
 opencv-python
 mediapipe
-pyautogui
-numpy
+
+# NLP & Sentiment
+textblob
+deepface
+
+# System Tray
+pystray
+pillow
+
+# Audio Input
+SpeechRecognition
+pyaudio
+
+# HTTP Requests
+requests
+
+# Optional / Specific Model Support
+# openai-whisper  # If using OpenAI's package vs transformers
+# sentencepiece   # Often required for some tokenizers
+protobuf

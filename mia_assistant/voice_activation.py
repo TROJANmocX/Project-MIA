@@ -14,7 +14,7 @@ def listen_for_commands(duration=30):
     recognizer = sr.Recognizer()
     mic = sr.Microphone()
     end_time = time.time() + duration
-    print("🎤 Combo mode: Listening for voice commands...")
+    print("Combo mode: Listening for voice commands...")
     while time.time() < end_time and combo_controller.active:
         with mic as source:
             recognizer.adjust_for_ambient_noise(source)
@@ -35,7 +35,7 @@ def listen_for_commands(duration=30):
 def listen_for_wake_word(wake_word=WAKE_WORD):
     recognizer = sr.Recognizer()
     mic = sr.Microphone()
-    print(f"🎤 Listening for wake word: '{wake_word}'...")
+    print(f"Listening for wake word: '{wake_word}'...")
     while True:
         with mic as source:
             recognizer.adjust_for_ambient_noise(source)

@@ -1,5 +1,5 @@
 @echo off
 cd /d "%~dp0"
 call .venv\Scripts\activate
-python mia_launcher.py
+python mia_main.py
 pause

@@ -1,13 +1,14 @@
 import threading
 import time
+from mia_assistant import tts_response, hud_overlay
 
 class ComboModeController:
     def __init__(self):
         self.active = False
         self.timer = None
         self.duration = 30
-        self.on_activate = None  # Callback for activation
-        self.on_deactivate = None  # Callback for deactivation
+        self.on_activate = None
+        self.on_deactivate = None
 
     def activate(self, duration=None):
         if self.active:
@@ -30,7 +31,6 @@ class ComboModeController:
         if self.on_deactivate:
             self.on_deactivate()
 
-from mia_assistant import tts_response, hud_overlay
 
 def combo_activated():
     tts_response.speak("Combo mode activated.", mood="bold")
@@ -39,6 +39,7 @@ def combo_activated():
 def combo_deactivated():
     tts_response.speak("Combo mode ended.", mood="calm")
     hud_overlay.display_message("Combo Mode Ended")
+
 
 combo_controller = ComboModeController()
 combo_controller.on_activate = combo_activated

@@ -1,6 +1,6 @@
-import pyttsx3
 import threading
 import queue
+import pyttsx3
 
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
